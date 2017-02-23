@@ -1,0 +1,15 @@
+{
+  "name": "react-native-datami",
+  "version": "1.0.0",
+  "devDependencies": {
+    "react-native": "^0.41.2"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
