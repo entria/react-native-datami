@@ -21,23 +21,4 @@
 
 #### Android
 
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.reactlibrary.RNDatamiPackage;` to the imports at the top of the file
-  - Add `new RNDatamiPackage()` to the list returned by the `getPackages()` method
-2. Append the following lines to `android/settings.gradle`:
-  	```
-  	include ':react-native-datami'
-  	project(':react-native-datami').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-datami/android')
-  	```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
-  	```
-      compile project(':react-native-datami')
-  	```
-
-## Usage
-```javascript
-import RNDatami from 'react-native-datami';
-
-// TODO: What to do with the module?
-RNDatami;
-```
+This is only needed on iOS
