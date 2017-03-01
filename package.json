@@ -1,9 +1,6 @@
 {
   "name": "react-native-datami",
   "version": "1.0.0",
-  "devDependencies": {
-    "react-native": "^0.41.2"
-  },
   "keywords": [
     "react-native"
   ],
