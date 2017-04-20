@@ -30,7 +30,7 @@ Search all `NSURLSessionConfiguration` references, and add this line after it
 #### Example
 
 ```diff
-- (NSURLSessionDataTask *)sendRequest:(NSURLRequest *)request
+-- (NSURLSessionDataTask *)sendRequest:(NSURLRequest *)request
                          withDelegate:(id<RCTURLRequestDelegate>)delegate
 {
   // Lazy setup
@@ -39,7 +39,7 @@ Search all `NSURLSessionConfiguration` references, and add this line after it
     callbackQueue.maxConcurrentOperationCount = 1;
     callbackQueue.underlyingQueue = [[_bridge networking] methodQueue];
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-    +[SmiSdk registerAppConfiguration: configuration];
++   [SmiSdk registerAppConfiguration: configuration];
     _session = [NSURLSession sessionWithConfiguration:configuration
                                              delegate:self
                                         delegateQueue:callbackQueue];
