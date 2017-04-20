@@ -30,7 +30,7 @@ Search all `NSURLSessionConfiguration` references, and add this line after it
 #### Example
 
 ```diff
--- (NSURLSessionDataTask *)sendRequest:(NSURLRequest *)request
+(NSURLSessionDataTask *)sendRequest:(NSURLRequest *)request
                          withDelegate:(id<RCTURLRequestDelegate>)delegate
 {
   // Lazy setup
